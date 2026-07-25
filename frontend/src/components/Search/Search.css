@@ -1,0 +1,40 @@
+.search-box{
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr auto;
+    gap:15px;
+}
+
+.search-box input,
+.search-box select{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.search-box button{
+    padding:15px 30px;
+    background:#C8A96A;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.search-box button:hover{
+    background:#b18f4f;
+}
+
+@media(max-width:900px){
+
+.search-box{
+
+grid-template-columns:1fr;
+
+}
+
+}

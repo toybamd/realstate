@@ -1,0 +1,121 @@
+.admin-users{
+
+    padding:40px;
+
+    background:#f5f7fb;
+
+    min-height:100vh;
+
+}
+
+.admin-users-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.admin-users h1{
+
+    margin-bottom:25px;
+
+}
+
+.search-box{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-bottom:25px;
+
+    border-radius:8px;
+
+    border:1px solid #ddd;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+}
+
+th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+tr:hover{
+
+    background:#f8fafc;
+
+}
+
+.role{
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-size:13px;
+
+}
+
+.role.admin{
+
+    background:#16a34a;
+
+}
+
+.role.customer{
+
+    background:#2563eb;
+
+}
+
+.delete-btn{
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+.delete-btn:hover{
+
+    background:#dc2626;
+
+}

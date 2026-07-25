@@ -1,0 +1,124 @@
+.user-navbar {
+
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+
+.user-nav-container {
+
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 25px;
+
+}
+
+
+.user-nav-container .logo {
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-decoration: none;
+
+}
+
+
+
+.user-nav-container ul {
+
+    display: flex;
+    gap: 25px;
+
+    list-style: none;
+
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.user-nav-container ul li a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: 500;
+
+}
+
+
+
+.user-nav-container ul li a:hover {
+
+    color: #2563eb;
+
+}
+
+
+
+.user-nav-container button {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+
+
+.user-nav-container button:hover {
+
+    background: #1d4ed8;
+
+}
+.brand {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+    color:#111827;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+
+
+.brand img {
+
+    width:45px;
+
+    height:45px;
+
+    object-fit:contain;
+
+}

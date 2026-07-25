@@ -1,0 +1,220 @@
+.admin-dashboard{
+
+    min-height:100vh;
+
+    padding:60px 5%;
+
+    background:#F8F9FA;
+
+}
+
+
+.admin-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+/* HERO */
+
+.admin-hero{
+
+    background:
+
+    linear-gradient(
+        rgba(15,23,42,.75),
+        rgba(15,23,42,.75)
+    ),
+
+    url("../assets/images/luxury-house.jpg");
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
+    padding:60px;
+
+    border-radius:25px;
+
+    color:white;
+
+    margin-bottom:50px;
+
+}
+
+
+.admin-hero h1{
+
+    font-size:45px;
+
+}
+
+
+.admin-hero p{
+
+    font-size:20px;
+
+    color:#e5e7eb;
+
+}
+
+
+
+
+
+/* CARDS */
+
+
+.admin-cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.admin-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    color:#0F172A;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.admin-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+.admin-card span{
+
+    font-size:45px;
+
+}
+
+
+.admin-card h2{
+
+    margin:20px 0;
+
+}
+
+
+.admin-card p{
+
+    color:#64748B;
+
+}
+
+
+
+
+
+/* QUICK ACTIONS */
+
+
+.quick-actions{
+
+    background:white;
+
+    margin-top:50px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+}
+
+
+.quick-actions h2{
+
+    color:#0F172A;
+
+    margin-bottom:25px;
+
+}
+
+
+.quick-actions a{
+
+    display:inline-block;
+
+    margin-right:15px;
+
+    padding:14px 25px;
+
+    background:#C8A96A;
+
+    color:white;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+}
+
+
+.quick-actions a:hover{
+
+    background:#B8924D;
+
+}
+
+
+
+
+.admin-loading{
+
+    text-align:center;
+
+    margin-top:100px;
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+.admin-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.admin-hero{
+
+    padding:35px;
+
+}
+
+
+}

@@ -1,0 +1,218 @@
+.admin-bookings{
+
+    padding:60px 5%;
+
+    background:#f8fafc;
+
+    min-height:80vh;
+
+}
+
+
+
+.booking-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+.booking-container h1{
+
+    color:#0f172a;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* Table */
+
+.booking-container table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.booking-container th{
+
+    background:#0f172a;
+
+    color:white;
+
+    padding:15px;
+
+    text-align:left;
+
+}
+
+
+
+.booking-container td{
+
+    padding:15px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    color:#475569;
+
+}
+
+
+
+.booking-container tr:hover{
+
+    background:#f8fafc;
+
+}
+
+
+
+/* Status */
+
+.approved{
+
+    color:#16a34a;
+
+    font-weight:bold;
+
+}
+
+
+
+.rejected{
+
+    color:#dc2626;
+
+    font-weight:bold;
+
+}
+
+
+
+.pending{
+
+    color:#f59e0b;
+
+    font-weight:bold;
+
+}
+
+
+
+/* Buttons */
+
+.booking-container button{
+
+    padding:8px 15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-right:8px;
+
+    color:white;
+
+}
+
+
+
+.approve{
+
+    background:#16a34a;
+
+}
+
+
+
+.approve:hover{
+
+    background:#15803d;
+
+}
+
+
+
+.reject{
+
+    background:#f59e0b;
+
+}
+
+
+
+.reject:hover{
+
+    background:#d97706;
+
+}
+
+
+
+.delete{
+
+    background:#dc2626;
+
+}
+
+
+
+.delete:hover{
+
+    background:#b91c1c;
+
+}
+
+
+
+.loading{
+
+    text-align:center;
+
+    margin-top:100px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+
+.booking-container{
+
+    overflow-x:auto;
+
+}
+
+
+.booking-container table{
+
+    min-width:900px;
+
+}
+
+
+}

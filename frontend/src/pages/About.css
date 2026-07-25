@@ -1,0 +1,91 @@
+.about-hero{
+
+    background:#0f172a;
+    color:white;
+    padding:90px 20px;
+    text-align:center;
+
+}
+
+.about-section{
+
+    padding:70px 20px;
+
+}
+
+.about-text{
+
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.about-text h2{
+
+    margin-bottom:20px;
+
+}
+
+.about-text p{
+
+    line-height:1.8;
+    margin-bottom:20px;
+
+}
+
+.mission{
+
+    background:#f8fafc;
+    padding:70px 20px;
+
+}
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    text-align:center;
+
+}
+
+.stats{
+
+    padding:70px 20px;
+
+}
+
+.stats-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    text-align:center;
+    gap:25px;
+
+}
+
+.stats h2{
+
+    color:#2563eb;
+    font-size:40px;
+
+}
+
+.cta{
+
+    background:#2563eb;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+
+}
