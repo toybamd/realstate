@@ -1,48 +1,17 @@
 import axios from "axios";
 
-
 const api = axios.create({
-
-    baseURL: "http://127.0.0.1:8000/api/",
-
+    baseURL: "https://realstate-api-weje.onrender.com/api/",
 });
 
+api.interceptors.request.use((config) => {
+    const token = localStorage.getItem("access");
 
-
-// Add JWT token automatically
-
-api.interceptors.request.use(
-
-    (config)=>{
-
-
-        const token = localStorage.getItem(
-            "access"
-        );
-
-
-        if(token){
-
-            config.headers.Authorization =
-            `Bearer ${token}`;
-
-        }
-
-
-        return config;
-
-
-    },
-
-
-    (error)=>{
-
-        return Promise.reject(error);
-
+    if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
     }
 
-);
-
-
+    return config;
+});
 
 export default api;
