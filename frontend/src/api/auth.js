@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const auth = axios.create({
-    baseURL: "http://127.0.0.1:8000/api/",
+    baseURL: "https://realstate-api-weje.onrender.com/api/",
 });
 
 export default auth;
