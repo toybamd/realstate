@@ -580,7 +580,7 @@ from rest_framework.response import Response
 def create_admin(request):
 
     user, created = User.objects.get_or_create(
-        username="admin",
+        username="toybaadmin",
         defaults={
             "email": "admin@gmail.com",
         }
@@ -589,7 +589,7 @@ def create_admin(request):
     user.is_staff = True
     user.is_superuser = True
     user.is_active = True
-    user.set_password("Admin12345")
+    user.set_password("Toyba12345")
     user.save()
 
     return Response({
