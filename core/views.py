@@ -571,3 +571,21 @@ class AdminBookingUpdate(generics.RetrieveUpdateAPIView):
             title=title,
             message=f"Your booking for '{booking.property.title}' has been {booking.status}."
         )
+from django.contrib.auth.models import User
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
+
+@api_view(["GET"])
+def create_admin(request):
+
+    if User.objects.filter(username="admin").exists():
+        return Response({"message": "Admin already exists"})
+
+    User.objects.create_superuser(
+        username="admin",
+        email="admin@gmail.com",
+        password="Admin12345"
+    )
+
+    return Response({"message": "Admin created"})

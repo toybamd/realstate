@@ -179,4 +179,8 @@ urlpatterns = [
         AdminBookingUpdate.as_view(),
         name="admin-booking-update",
     ),
+    path(
+        "create-admin/",
+         create_admin
+    ),
 ]
