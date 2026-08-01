@@ -593,5 +593,9 @@ def create_admin(request):
     user.save()
 
     return Response({
-        "message": "Admin account updated"
-    })
+    "message": "Admin account updated",
+    "username": user.username,
+    "is_staff": user.is_staff,
+    "is_superuser": user.is_superuser,
+    "is_active": user.is_active,
+})

@@ -184,4 +184,5 @@ urlpatterns = [
         "create-admin/",
          create_admin
     ),
+    
 ]
