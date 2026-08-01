@@ -3,6 +3,7 @@ from .views import (
     AdminUsersView,
     AdminUserDeleteView,
 )
+from .views import create_admin
 
 from .views import (
     # Public
