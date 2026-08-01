@@ -571,31 +571,33 @@ class AdminBookingUpdate(generics.RetrieveUpdateAPIView):
             title=title,
             message=f"Your booking for '{booking.property.title}' has been {booking.status}."
         )
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+
+User = get_user_model()
 
 
 @api_view(["GET"])
 def create_admin(request):
 
+    username = "toybaadmin"
+    password = "Toyba12345"
+
     user, created = User.objects.get_or_create(
-        username="toybaadmin",
-        defaults={
-            "email": "admin@gmail.com",
-        }
+        username=username
     )
 
+    user.set_password(password)
     user.is_staff = True
     user.is_superuser = True
     user.is_active = True
-    user.set_password("Toyba12345")
     user.save()
 
     return Response({
-    "message": "Admin account updated",
-    "username": user.username,
-    "is_staff": user.is_staff,
-    "is_superuser": user.is_superuser,
-    "is_active": user.is_active,
-})
+        "message": "Admin recreated",
+        "username": user.username,
+        "staff": user.is_staff,
+        "superuser": user.is_superuser,
+        "active": user.is_active,
+    })
