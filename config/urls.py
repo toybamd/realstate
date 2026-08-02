@@ -9,10 +9,22 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
-urlpatterns = [
-    path("admin/", admin.site.urls),
 
-    path("api/", include("core.urls")),
+urlpatterns = [
+
+    # Django Admin
+    path(
+        "admin/",
+        admin.site.urls
+    ),
+
+
+    # Main API
+    path(
+        "api/",
+        include("core.urls")
+    ),
+
 
     # JWT Authentication
     path(
@@ -21,15 +33,19 @@ urlpatterns = [
         name="token_obtain_pair"
     ),
 
+
     path(
         "api/token/refresh/",
         TokenRefreshView.as_view(),
         name="token_refresh"
     ),
+
 ]
 
-if settings.DEBUG:
-    urlpatterns += static(
-        settings.MEDIA_URL,
-        document_root=settings.MEDIA_ROOT
-    )
+
+# Serve uploaded media files
+# Works for development and Render deployment
+urlpatterns += static(
+    settings.MEDIA_URL,
+    document_root=settings.MEDIA_ROOT
+)
